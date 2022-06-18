@@ -14,268 +14,422 @@
 <body>
 
     <!-- Шапка сторінки -->
-    <section class="page-header">
-        <div class="container">
-            <a class="logo">
-                <svg width="65" height="55">
-                    <use href="./image/icons/Logo.svg" </svg>
-            </a>
-            <nav class="page-navigation">
-                <ul class="navigation-list">
-                    <li class="navigation-item" id="about">О нас</li>
-                    <li class="navigation-item" id="price">Услуги и цены</li>
-                    <li class="navigation-item" id="masters">Мастера</li>
-                    <li class="navigation-item" id="contacts">Контакты</li>
+    <header class="page-header">
+            <div class="container">
+                <a class="logo">
+                    <svg width="65" height="55">
+                        <use href="./image/icons/Logo.svg"></use>
+                    </svg>
+                </a>
+                <nav class="page-navigation">
+                    <ul class="navigation-list">
+                        <li class="navigation-item" id="about">О нас</li>
+                        <li class="navigation-item" id="price">Услуги и цены</li>
+                        <li class="navigation-item" id="masters">Мастера</li>
+                        <li class="navigation-item" id="contacts">Контакты</li>
+                    </ul>
+                </nav>
+                <button class="main-button" type="button">онлайн-запись</button>
+                <a class="phone" href="tel:+380441111111">+38 044 111 11 11</a>
+                <ul class="page-social-list">
+                    <li class="page-social-item">
+                        <a class="page-social-link" href="https://www.instagram.com/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Ссылка на Инстаграм">Instagram</a>
+                    </li>
+                    <li class="page-social-item">
+                        <a class="page-social-link" href="https://www.youtube.com/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Ссылка на Ютуб">Youtube</a>
+                    </li>
                 </ul>
-            </nav>
-            <button class="main-button" type="button">онлайн-запись</button>
-            <a class="phone" href="tel:+380441111111">+38 044 111 11 11</a>
-            <ul class="page-social-list">
-                <li class="page-social-item">
-                    <a class="page-social-link" href="https://www.instagram.com/" target="_blank"
-                        rel="noopener noreferrer" aria-label="Ссылка на Инстаграм">Instagram</a>
-                </li>
-                <li class="page-social-item">
-                    <a class="page-social-link" href="https://www.youtube.com/" target="_blank"
-                        rel="noopener noreferrer" aria-label="Ссылка на Ютуб">Youtube</a>
-                </li>
-            </ul>
 
-            <!-- Кнопки для мобільного меню -->
-            <button class="menu-button" type="button">
-                <svg width="40" height="40">
-                    <use href="./image/icons/"></use>
-                </svg>
-            </button>
-            <button class="menu-button" type="button">
-                <svg width="40" height="40">
-                    <use href="./image/icons/"></use>
-                </svg>
-            </button>
-        </div>
-    </section>
+                <!-- Кнопки для мобільного меню -->
+                <button class="menu-button" type="button">
+                    <svg width="40" height="40">
+                        <use href="./image/icons/"></use>
+                    </svg>
+                </button>
+                <button class="menu-button" type="button">
+                    <svg width="40" height="40">
+                        <use href="./image/icons/"></use>
+                    </svg>
+                </button>
+            </div>
+    </header>
 
-    <!-- Герой -->
-    <section class="hero">
-        <div class="container">
-            <p class="hero-slogan" lang="en">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
-            <p class="hero-text">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
-        </div>
-    </section>
+    <main>
+        <!-- Герой -->
+        <section class="hero">
+            <div class="container">
+                <p class="hero-slogan" lang="en">A hair salon for men in Kyiv</p>
+                <h1 class="hero-title">BarberShop</h1>
+                <p class="hero-text">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+            </div>
+        </section>
 
-    <!-- Секція Про нас -->
-    <section #about class="section-about">
-        <div class="container">
-            <p>О НАС</p>
-            <h2 class="about-title">Лучший Барбершоп твоего города</h2>
-            <p class="about-subtitle">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-            <p class="about-description">Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен.
-                И когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним.
-                Мы команда, которая всегда с клиентами "на одной волне".
-                Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-            <button class="main-button" type="button">онлайн-запись</button>
-        </div>
-    </section>
+        <!-- Секція Про нас -->
+        <section #about class="section-about">
+            <div class="container">
+                <h2>О НАС</h2>>
+                <h3 class="about-title">Лучший Барбершоп твоего города</h3>
+                <p class="about-subtitle">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
+                </p>
+                <p class="about-description">Мы команда, которая никогда не останавливается на достигнутом и жаждет
+                    перемен.
+                    И когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним.
+                    Мы команда, которая всегда с клиентами "на одной волне".
+                    Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
+                <button class="main-button" type="button">онлайн-запись</button>
+            </div>
+        </section>
 
-    <!-- Секція Ціни -->
-    <section #price class="section-price">
-        <div class="container">
-            <p>Проведи время в компании лучших мастеров</p>
-            <h2 class="main-title">Услуги и цены</h2>
-            <ul class="price-list">
-                <li class="price-item">Мужская стрижка от 300 грн.</li>
-                <li class="price-item">Стрижка бороды от 200 грн.</li>
-                <li class="price-item">Стрижка усов от 200 грн.</li>
-                <li class="price-item">Бритье опасной бритвой от 200 грн.</li>
-                <li class="price-item">Cтрижка у стажера от 50 грн.</li>
-                <li class="price-item">Стрижка под насадку от 200 грн.</li>
-                <li class="price-item">Детская стрижка (до 12 лет) от 300 грн.</li>
-                <li class="price-item">Камуфлирование седины от 200 грн.</li>
-            </ul>
-            <button class="main-button" type="button">онлайн-запись</button>
-        </div>
-    </section>
+        <!-- Секція Ціни -->
+        <section #price class="section-price">
+            <div class="container">
+                <h2>Проведи время в компании лучших мастеров</h2>
+                <h3 class="main-title">Услуги и цены</h3>
+                <ul class="price-list">
+                    <li class="price-item">Мужская стрижка от 300 грн.</li>
+                    <li class="price-item">Стрижка бороды от 200 грн.</li>
+                    <li class="price-item">Стрижка усов от 200 грн.</li>
+                    <li class="price-item">Бритье опасной бритвой от 200 грн.</li>
+                    <li class="price-item">Cтрижка у стажера от 50 грн.</li>
+                    <li class="price-item">Стрижка под насадку от 200 грн.</li>
+                    <li class="price-item">Детская стрижка (до 12 лет) от 300 грн.</li>
+                    <li class="price-item">Камуфлирование седины от 200 грн.</li>
+                </ul>
+                <button class="main-button" type="button">онлайн-запись</button>
+            </div>
+        </section>
 
-    <!-- Секція Переваги -->
-    <section class="section-benefits">
-        <div class="container">
-            <p>старая традиционная школа</p>
-            <h2 class="main-title">Почему приходят именно к нам?</h2>
-            <p class="benefits-text">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз
-                прочитать.</p>
-            <ul>
-                <li>
-                    <div>600<span>+</span>
-                        <p>Довольных клиентов в день</p>
-                    </div>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <div>50<span>+</span>
-                        <p>Наград за отличный сервис</p>
-                    </div>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <div>20<span>+</span>
-                        <p>Лучших мастеров Киева</p>
-                    </div>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <div>100<span>+</span>
-                        <p>Подарков постоянным клиентам</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+        <!-- Секція Переваги -->
+        <section class="section-benefits">
+            <div class="container">
+                <h2>старая традиционная школа</h2>
+                <h3 class="main-title">Почему приходят именно к нам?</h3>
+                <p class="benefits-text">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10
+                    раз
+                    прочитать.</p>
+                <ul>
+                    <li>
+                        <div>600<span>+</span>
+                            <p>Довольных клиентов в день</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>50<span>+</span>
+                            <p>Наград за отличный сервис</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>20<span>+</span>
+                            <p>Лучших мастеров Киева</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>100<span>+</span>
+                            <p>Подарков постоянным клиентам</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- Секція Майстри -->
-    <section #masters class="section-masters">
-        <div class="container">
-            <p>для настоящих ценителей атмосферы</p>
-            <h2 class="main-title">Наши мастера</h2>
-            <ul class="masters-list">
-                <li class="masters-item">
-                    <div class="card-thumb">
+        <!-- Секція Майстри -->
+        <section #masters class="section-masters">
+            <div class="container">
+                <h2>для настоящих ценителей атмосферы</h2>
+                <h3 class="main-title">Наши мастера</h3>
+                <ul class="masters-list">
+                    <li class="masters-item">
+                        <div class="card-thumb">
+
+                            <picture>
+                                <source media="(max-width: 767px)" type="image/webp" srcset="./image/masters/img1-mob.webp 1x,
+                            ./image/masters/img1-mob@2x.webp 2x">
+
+                                <source media="(max-width: 767px)" type="image/jpg" srcset="./image/masters/img1-mob.jpg 1x,
+                            ./image/masters/img1-mob@2x.jpg 2x">
+                                <img src="./image/masters/img1-mob.jpg" alt="Бритье шеи после стрижки" width="418"
+                                    height="346">
+                            </picture>
+                        </div>
+
+                            <h4 class="masters-title" lang="en">John Smith</h4>
+                            <p class="masters-position" lang="en">Extreme Barber</p>
+
+                            <ul class="soc-link-list">
+                                <li class="soc-link-item">
+                                    <a class="soc-link" href="https://www.instagram.com/" target="_blank"
+                                        rel="noopener noreferrer" aria-label="Иконка Инстаграма">
+                                        <svg width="20" height="20">
+                                            <use href="./image/icons/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc-link-item">
+                                    <a class="soc-link" href="https://twitter.com/" target="_blank"
+                                        rel="noopener noreferrer" aria-label="Иконка Твиттера">
+                                        <svg width="20" height="20">
+                                            <use href="./image/icons/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc-link-item">
+                                    <a class="soc-link" href="https://www.facebook.com/" target="_blank"
+                                        rel="noopener noreferrer" aria-label="Иконка Фейсбука">
+                                        <svg width="20" height="20">
+                                            <use href="./image/icons/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc-link-item">
+                                    <a class="soc-link" href="https://www.linkedin.com/" target="_blank"
+                                        rel="noopener noreferrer" aria-label="Иконка Линкедина">
+                                        <svg width="20" height="20">
+                                            <use href="./image/icons/sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                    </li>
+
+                    <li class="masters-item">
+                        <div class="card-thumb">
+
+                            <picture>
+                                <source media="(max-width: 767px)" type="image/webp" srcset="./image/masters/img2-mob.webp 1x,
+                            ./image/masters/img2-mob@2x.webp 2x">
+
+                                <source media="(max-width: 767px)" type="image/jpg" srcset="./image/masters/img2-mob.jpg 1x,
+                            ./image/masters/img2-mob@2x.jpg 2x">
+                                <img src="./image/masters/img2-mob.jpg" alt="Стильная стрижка от лучшего барбера Киева"
+                                    width="418" height="346">
+                            </picture>
+
+                        </div>
+                        <h4 class="masters-title" lang="en">Michele Doe</h4>
+                        <p class="masters-position" lang="en">Extreme Barber</p>
+
+                        <ul class="soc-link-list">
+                            <li class="soc-link-item">
+                                <a class="soc-link" href="https://www.instagram.com/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Иконка Инстаграма">
+                                    <svg width="20" height="20">
+                                        <use href="./image/icons/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="soc-link-item">
+                                <a class="soc-link" href="https://twitter.com/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Иконка Твиттера">
+                                    <svg width="20" height="20">
+                                        <use href="./image/icons/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="soc-link-item">
+                                <a class="soc-link" href="https://www.facebook.com/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Иконка Фейсбука">
+                                    <svg width="20" height="20">
+                                        <use href="./image/icons/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="soc-link-item">
+                                <a class="soc-link" href="https://www.linkedin.com/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Иконка Линкедина">
+                                    <svg width="20" height="20">
+                                        <use href="./image/icons/sprite.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="masters-item">
+                        <div class="card-thumb">
+
+                            <picture>
+                                <source media="(max-width: 767px)" type="image/webp" srcset="./image/masters/img3-mob.webp 1x,
+                            ./image/masters/img3-mob@2x.webp 2x">
+
+                                <source media="(max-width: 767px)" type="image/jpg" srcset="./image/masters/img3-mob.jpg 1x,
+                            ./image/masters/img3-mob@2x.jpg 2x">
+                                <img src="./image/masters/img3-mob.jpg" alt="Модэльная стрижка в Киеве" width="418"
+                                    height="346">
+                            </picture>
+
+                        </div>
+                        <h4 class="masters-title" lang="en">Alan Black</h4>
+                        <p class="masters-position" lang="en">Extreme Barber</p>
+
+                        <ul class="soc-link-list">
+                            <li class="soc-link-item">
+                                <a class="soc-link" href="https://www.instagram.com/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Иконка Инстаграма">
+                                    <svg width="20" height="20">
+                                        <use href="./image/icons/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="soc-link-item">
+                                <a class="soc-link" href="https://twitter.com/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Иконка Твиттера">
+                                    <svg width="20" height="20">
+                                        <use href="./image/icons/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="soc-link-item">
+                                <a class="soc-link" href="https://www.facebook.com/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Иконка Фейсбука">
+                                    <svg width="20" height="20">
+                                        <use href="./image/icons/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="soc-link-item">
+                                <a class="soc-link" href="https://www.linkedin.com/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Иконка Линкедина">
+                                    <svg width="20" height="20">
+                                        <use href="./image/icons/sprite.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Секція Портфоліо робіт -->
+        <section class="section-portfolio">
+            <div class="container">
+                <h2>На латинском языке “барба” означает “борода”</h2>
+                <ul class="portfolio-list">
+                    <li class="portfolio-item">
                         <picture>
-                            <source srcset="./image/masters/img1-mob.webp 1x,
-                            ./image/masters/img1-mob@2x.webp 2x" type="image/webp">
+                            <source media="(max-width: 767px)" type="image/webp" srcset="./image/works/work1-mob.webp 1x,
+                        ./image/works/work1-mob@2x.webp 2x">
 
-                            <source srcset="./image/masters/img1-mob.jpg 1x,
-                            ./image/masters/img1-mob@2x.jpg 2x" type="image/jpg">
-                            <img src="./image/masters/img1-mob.jpg" alt="Бритье шеи после стрижки" width="418" height="346">
+                            <source media="(max-width: 767px)" type="image/jpg" srcset="./image/works/work1-mob.jpg 1x,
+                        ./image/works/work1-mob.jpg 2x">
+
+                            <img src="./image/works/work1-mob.jpg" alt="Стрижка горячими ножницами" width="418"
+                                height="360">
                         </picture>
-                    </div>
-                    <h3 class="masters-title">John Smith</h3>
-                    <p class="masters-position">Extreme Barber</p>
-                    <ul class="soc-link-list">
-                        <li class="soc-link-item">
-                            <a class="soc-link" href="" target="_blank" rel="noopener noreferrer">
-                                <svg width="20" height="20">
-                                    <use href="./image/icons/sprite#"></use>
+                    </li>
+
+                    <li class="portfolio-item">
+                        <picture>
+                            <source media="(max-width: 767px)" type="image/webp" srcset="./image/works/work2-mob.webp 1x,
+                        ./image/works/work2-mob@2x.webp 2x">
+
+                            <source media="(max-width: 767px)" type="image/jpg" srcset="./image/works/work2-mob.jpg 1x,
+                        ./image/works/work2-mob.jpg 2x">
+
+                            <img src="./image/works/work2-mob.jpg" alt="Бритье бороды" width="418" height="360">
+                        </picture>
+                    </li>
+
+                    <li class="portfolio-item">
+                        <picture>
+                            <source media="(max-width: 767px)" type="image/webp" srcset="./image/works/work3-mob.webp 1x,
+                        ./image/works/work3-mob@2x.webp 2x">
+
+                            <source media="(max-width: 767px)" type="image/jpg" srcset="./image/works/work3-mob.jpg 1x,
+                        ./image/works/work3-mob.jpg 2x">
+
+                            <img src="./image/works/work3-mob.jpg" alt="Работа мастера с клиентом" width="418"
+                                height="360">
+                        </picture>
+                    </li>
+                    <li class="portfolio-item">
+                        <picture>
+                            <source media="(max-width: 767px)" type="image/webp" srcset="./image/works/work4-mob.webp 1x,
+                        ./image/works/work4-mob@2x.webp 2x">
+
+                            <source media="(max-width: 767px)" type="image/jpg" srcset="./image/works/work4-mob.jpg 1x,
+                        ./image/works/work4-mob.jpg 2x">
+
+                            <img src="./image/works/work4-mob.jpg" alt="Стрижка опасной бритвой" width="418"
+                                height="360">
+                        </picture>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="page-footer">
+            <div class="container">
+                <div class="container-form">
+                    <form class="form-recording" autocomplete="off">
+                        <b class="title-recording">Онлайн-запись</b>
+                        <label class="label-recording">
+                            Имя*
+                            <input type="text" class="input-recording" name="user-name" required autofocus>
+                        </label>
+                        <label class="label-recording">
+                            Телефон*
+                            <input type="tel" class="input-recording" name="user-phone" required>
+                        </label>
+                        <label for="messange"></label>
+                        <textarea class="input-recording" name="user-messange" id="messange" cols="3" rows="5"
+                            placeholder="Напишите нам Ваши пожелания"></textarea>
+                        <button class="form-button" type="submit">отправить</button>
+                    </form>
+                </div>
+
+                <div class="container-contacts">
+                    <h3 class="main-title">Контакты</h3>
+                    <ul class="contacts-list">
+                        <li class="contacts">
+                            <a class="link-contact"
+                                href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%92%D0%BE%D0%BB%D0%BE%D1%88%D0%BA%D0%BE%D0%B2%D0%B0,+7,+%D0%91%D1%83%D1%87%D0%B0,+%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB."
+                                target="_blank" rel="noopener noreferrer">
+                                <svg class="icon-contact" width="24" height="24">
+                                    <use href="./image/icons/sprite.svg#icon-location"></use>
                                 </svg>
-                            </a>
+                                ул. Васильковая, 7А, Киев, 08132</a>
                         </li>
-                        <li class="soc-link-item">
-                            <a class="soc-link" href="" target="_blank" rel="noopener noreferrer">
-                                <svg width="20" height="20">
-                                    <use href="./image/icons/sprite#"></use>
+                        <li class="contacts">
+                            <a class="link-contact" href="tel:+380441111111">
+                                <svg class="icon-contact" width="24" height="24">
+                                    <use href="./image/icons/sprite.svg#icon-phone"></use>
                                 </svg>
-                            </a>
+                                +38 044 111 11 11</a>
                         </li>
-                        <li class="soc-link-item">
-                            <a class="soc-link" href="" target="_blank" rel="noopener noreferrer">
-                                <svg width="20" height="20">
-                                    <use href="./image/icons/sprite#"></use>
+                        <li class="contacts">
+                            <a class="link-contact" href="mailto:barbershop@email.com">
+                                <svg class="icon-contact" width="24" height="24">
+                                    <use href="./image/icons/sprite.svg#icon-mail"></use>
                                 </svg>
-                            </a>
-                        </li>
-                        <li class="soc-link-item">
-                            <a class="soc-link" href="" target="_blank" rel="noopener noreferrer">
-                                <svg width="20" height="20">
-                                    <use href="./image/icons/sprite#"></use>
-                                </svg>
-                            </a>
+                                barbershop@email.com</a>
                         </li>
                     </ul>
-                </li>
-                <li class="masters-item">
-                    <div class="card-thumb">
-                        <picture>
-                            <source srcset="./image/masters/img2-mob.webp 1x,
-                            ./image/masters/img2-mob@2x.webp 2x" type="image/webp">
+                    <h4>время работы</h4>
+                    <p>Ежедневно с 9:00 до 22:00</p>
+                </div>
 
-                            <source srcset="./image/masters/img2-mob.jpg 1x,
-                            ./image/masters/img2-mob@2x.jpg 2x" type="image/jpg">
-                            <img src="./image/masters/img2-mob.jpg" alt="Стильная стрижка от лучшего барбера Киева" width="418" height="346">
-                        </picture>
-                    </div>
-                    <h3 class="masters-title">Michele Doe</h3>
-                    <p class="masters-position">Extreme Barber</p>
-                    <ul class="soc-link-list">
-                        <li class="soc-link-item">
-                            <a class="soc-link" href="" target="_blank" rel="noopener noreferrer">
-                                <svg width="20" height="20">
-                                    <use href="./image/icons/sprite#"></use>
-                                </svg>
-                            </a>
+                <div>
+                    <ul class="footer-social-list">
+                        <li class="ftr-social-item">
+                            <a class="ftr-social-link" href="https://www.instagram.com/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Ссылка на Инстаграм">Instagram</a>
                         </li>
-                        <li class="soc-link-item">
-                            <a class="soc-link" href="" target="_blank" rel="noopener noreferrer">
-                                <svg width="20" height="20">
-                                    <use href="./image/icons/sprite#"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="soc-link-item">
-                            <a class="soc-link" href="" target="_blank" rel="noopener noreferrer">
-                                <svg width="20" height="20">
-                                    <use href="./image/icons/sprite#"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="soc-link-item">
-                            <a class="soc-link" href="" target="_blank" rel="noopener noreferrer">
-                                <svg width="20" height="20">
-                                    <use href="./image/icons/sprite#"></use>
-                                </svg>
-                            </a>
+                        <li class="ftr-social-item">
+                            <a class="ftr-social-link" href="https://www.youtube.com/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Ссылка на Ютуб">Youtube</a>
                         </li>
                     </ul>
-                </li>
-                <li class="masters-item">
-                    <div class="card-thumb">
-                        <picture>
-                            <source srcset="./image/masters/img3-mob.webp 1x,
-                            ./image/masters/img3-mob@2x.webp 2x" type="image/webp">
-
-                            <source srcset="./image/masters/img3-mob.jpg 1x,
-                            ./image/masters/img3-mob@2x.jpg 2x" type="image/jpg">
-                            <img src="./image/masters/img3-mob.jpg" alt="Модэльная стрижка в Киеве" width="418" height="346">
-                        </picture>
-                    </div>
-                    <h3 class="masters-title">Alan Black</h3>
-                    <p class="masters-position">Extreme Barber</p>
-                    <ul class="soc-link-list">
-                        <li class="soc-link-item">
-                            <a class="soc-link" href="" target="_blank" rel="noopener noreferrer">
-                                <svg width="20" height="20">
-                                    <use href="./image/icons/sprite#"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="soc-link-item">
-                            <a class="soc-link" href="" target="_blank" rel="noopener noreferrer">
-                                <svg width="20" height="20">
-                                    <use href="./image/icons/sprite#"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="soc-link-item">
-                            <a class="soc-link" href="" target="_blank" rel="noopener noreferrer">
-                                <svg width="20" height="20">
-                                    <use href="./image/icons/sprite#"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="soc-link-item">
-                            <a class="soc-link" href="" target="_blank" rel="noopener noreferrer">
-                                <svg width="20" height="20">
-                                    <use href="./image/icons/sprite#"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </section>
+                    <p>&#169; Copyright 2020</p>
+                </div>
+            </div>
+    </footer>
 
 </body>
 
