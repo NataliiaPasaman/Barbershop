@@ -11,6 +11,7 @@
 // Підключення компонентів
 @import './components/button';
 @import './components/section-name';
+@import './components/main-title';
 
 
 // Підключення layout
@@ -18,3 +19,4 @@
 @import './layout/section-about';
 @import './layout/section-price';
 @import './layout/section-benefits';
+@import './layout/section-masters';

@@ -60,6 +60,8 @@ body {
   font-family: 'Open Sans', 'Raleway', sans-serif;
   background-color: #fff;
   color: #555555;
+  font-size: 18px;
+  line-height: 1.17;
 }
 
 @media screen and (min-width: 480px) {
@@ -67,6 +69,12 @@ body {
     padding-top: 84px;
     padding-bottom: 84px;
   }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .main-button {
@@ -97,6 +105,7 @@ body {
   margin-bottom: 20px;
   padding-left: 70px;
   font-weight: 600;
+  color: #303030;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
@@ -125,6 +134,22 @@ body {
   background-color: rgba(157, 164, 189, 0.6);
 }
 
+.main-title {
+  margin-bottom: 44px;
+  font-family: 'Raleway';
+  font-size: 42px;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.section-price .main-title {
+  color: #fff;
+}
+
+.section-benefits .main-title {
+  margin-bottom: 20px;
+}
+
 .hero {
   background-repeat: no-repeat;
   background-position: center;
@@ -149,7 +174,6 @@ body {
   color: #fff;
   font-family: 'Raleway';
   font-size: 48px;
-  line-height: 1.17;
   letter-spacing: 0.05em;
 }
 
@@ -182,5 +206,41 @@ body {
   margin-bottom: 40px;
   font-size: 14px;
   line-height: 1.86;
+}
+
+.section-masters {
+  background-color: #F7F7F7;
+}
+
+.soc-link-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.soc-link-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.soc-link svg {
+  fill: #303030;
+}
+
+.soc-link:hover svg,
+.soc-link:focus svg {
+  fill: #FF6C00;
 }
 /*# sourceMappingURL=main.css.map */

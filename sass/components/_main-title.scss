@@ -1,0 +1,16 @@
+.main-title {
+    margin-bottom: 44px;
+    font-family: 'Raleway';
+    font-size: 42px;
+    letter-spacing: 0.05em;
+
+    color: #303030;
+
+    .section-price & {
+        color: $main-bcg-color;
+    }
+
+    .section-benefits & {
+        margin-bottom: 20px;
+    }
+}

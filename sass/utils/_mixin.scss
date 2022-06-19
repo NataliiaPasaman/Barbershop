@@ -12,3 +12,10 @@
     letter-spacing: $ls;
     text-transform: $ttransform;
 }
+
+// Міксін для фдексів
+@mixin Flex ($flex, $align, $justify) {
+    display: $flex;
+    align-items: $align;
+    justify-content: $justify;
+}

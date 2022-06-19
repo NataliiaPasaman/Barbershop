@@ -1,0 +1,32 @@
+.section-masters {
+    background-color: $secondary-bcg-color;
+}
+
+.soc-link-list {
+    @include Flex (flex, center, center);
+}
+
+.soc-link-item {
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    // width: 44px;
+    // height: 44px;
+}
+
+.soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $main-bcg-color;
+
+    & svg {
+        fill: $title-color;
+    }
+
+    &:hover svg, 
+    &:focus svg {
+        fill: $accent-color;
+    }
+}
