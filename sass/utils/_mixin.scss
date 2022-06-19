@@ -1,0 +1,14 @@
+// Міксін для паддінгів секції
+
+@mixin PaddingSection ($ptop, $pbottom) {
+    padding-top: $ptop;
+    padding-bottom: $pbottom;
+}
+
+// Міксін для заголовків секцій
+@mixin SectionH2 ($fonts, $lh, $ls, $ttransform) {
+    font-size: $fonts;
+    line-height: $lh;
+    letter-spacing: $ls;
+    text-transform: $ttransform;
+}

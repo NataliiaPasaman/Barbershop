@@ -1,0 +1,11 @@
+body {
+    font-family: 'Open Sans', 'Raleway', sans-serif;
+    background-color: $main-bcg-color;
+    color: $main-text-color;
+}
+
+section {
+    @media screen and (min-width: $mobile) {
+        @include PaddingSection (84px, 84px);
+    }
+}

@@ -1,0 +1,16 @@
+// Підключення утилітів
+@import './utils/variables';
+@import './utils/mixin';
+@import './utils/animations';
+
+// Підключення базових стилів
+@import './base/container';
+@import './base/reset';
+@import './base/common';
+
+// Підключення компонентів
+@import './components/button';
+
+
+// Підключення layout
+@import './layout/section-about';
