@@ -95,7 +95,8 @@ body {
 .section-name {
   position: relative;
   margin-bottom: 20px;
-  margin-left: 80px;
+  padding-left: 70px;
+  font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
@@ -106,13 +107,58 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  left: 31px;
+  left: 0;
   display: block;
   background-color: #303030;
-  width: 1px;
-  height: 60px;
-  -webkit-transform: translateY(-23px) rotate(90deg);
-          transform: translateY(-23px) rotate(90deg);
+  width: 50px;
+  height: 1px;
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
+}
+
+.hero-slogan {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-slogan::before {
+  content: "";
+  background-color: rgba(157, 164, 189, 0.6);
+}
+
+.hero {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 480px 580px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("../image/bcg-hero/bcg-hero-mob.jpg");
+  background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../image/bcg-hero/bcg-hero-mob.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), -webkit-image-set(url("../images/bcg-hero/bcg-hero-mob.webp") 1x);
+  background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), -webkit-image-set(url("../images/bcg-hero/bcg-hero-mob.webp") 1x);
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("../images/bcg-hero/bcg-hero-mob@2x.jpg");
+    background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../images/bcg-hero/bcg-hero-mob@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), -webkit-image-set(url("../images/bcg-hero/bcg-hero-mob@2x.webp") 2x);
+    background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), -webkit-image-set(url("../images/bcg-hero/bcg-hero-mob@2x.webp") 2x);
+  }
+}
+
+.hero-title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: 'Raleway';
+  font-size: 48px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.hero-text {
+  width: 306px;
+  color: #9DA4BD;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.02em;
 }
 
 .about-title {

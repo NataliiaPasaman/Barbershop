@@ -1,0 +1,31 @@
+.section-name {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 70px;
+    font-weight: 600;
+
+    @include SectionH2 (11px, 1.36, 0.1em, uppercase);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+        background-color: $title-color;
+        width: 50px;
+        height: 1px;
+        
+        transform: translateY(7px);
+    }
+}
+
+.hero-slogan {
+    color: rgba(157, 164, 189, 0.6);
+
+    &::before {
+        content: "";
+        background-color: rgba(157, 164, 189, 0.6);
+    }
+}
