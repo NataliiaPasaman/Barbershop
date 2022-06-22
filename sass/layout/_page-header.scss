@@ -4,8 +4,25 @@
 }
 
 .menu-toggle {
+    position: absolute;
+    top: 48px;
+    right: 31px;
+
+    @include Flex (flex, center, center);
+
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: $main-bcg-color;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        border-color: $accent-color;
+    }
+
     & .menu-icon {
-        fill: $main-bcg-color;
+        fill: $title-color;
     }
 
     &:hover .menu-icon,
@@ -14,9 +31,22 @@
     }
 }
 
-
-.mobile-menu {
+.menu-container {
+    position: relative;
     background-color: aqua;
-    width: 80%;
-    height: 400px;
+    width: 350px;
+    // width: 72%;
+    height: 796px;
+}
+
+.page-navigation {
+    margin-top: 118px;
+    margin-left: 49px;
+    margin-bottom: 64px;
+}
+
+.navigation-item {
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
 }

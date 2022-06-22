@@ -155,8 +155,32 @@ img {
   height: 55px;
 }
 
+.menu-toggle {
+  position: absolute;
+  top: 48px;
+  right: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.menu-toggle:hover, .menu-toggle:focus {
+  color: #FF6C00;
+  border-color: #FF6C00;
+}
+
 .menu-toggle .menu-icon {
-  fill: #fff;
+  fill: #303030;
 }
 
 .menu-toggle:hover .menu-icon,
@@ -164,10 +188,21 @@ img {
   fill: #FF6C00;
 }
 
-.mobile-menu {
+.menu-container {
+  position: relative;
   background-color: aqua;
-  width: 80%;
-  height: 400px;
+  width: 350px;
+  height: 796px;
+}
+
+.page-navigation {
+  margin-top: 118px;
+  margin-left: 49px;
+  margin-bottom: 64px;
+}
+
+.navigation-item:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .hero {

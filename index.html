@@ -29,16 +29,16 @@
             </a>
 
             <!-- Кнопки для мобільного меню -->
-            <button class="menu-toggle js-open-menu" type="button" id="menu" aria-expanded="false" aria-controls="mobile-menu">
+            <button class="menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
                 <svg class="menu-icon" width="24" height="16">
                     <use href="./image/icons/sprite.svg#icon-menu-burger"></use>
                 </svg>
             </button>
 
 
-            <div class="mobile-menu" id="menu">
+            <div class="menu-container js-menu-container" id="mobile-menu">
 
-                <button class="menu-button-close" type="button">
+                <button class="menu-toggle js-close-menu" type="button">
                     <svg class="menu-icon" width="19" height="19">
                         <use href="./image/icons/sprite.svg#icon-menu-close"></use>
                     </svg>
@@ -46,10 +46,18 @@
 
                 <nav class="page-navigation">
                     <ul class="navigation-list">
-                        <li class="navigation-item" id="about">О нас</li>
-                        <li class="navigation-item" id="price">Услуги и цены</li>
-                        <li class="navigation-item" id="masters">Мастера</li>
-                        <li class="navigation-item" id="contacts">Контакты</li>
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="#about">О нас</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="#price">Услуги и цены</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="#masters">Мастера</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="#contacts">Контакты</a>
+                        </li>
                     </ul>
                 </nav>
                 <button class="main-button" type="button">онлайн-запись</button>
@@ -80,7 +88,7 @@
         </section>
 
         <!-- Секція Про нас -->
-        <section #about class="section-about">
+        <section class="section-about" id="about">
             <div class="container">
                 <h2 class="section-name">О НАС</h2>
                 <h3 class="about-title">Лучший Барбершоп твоего города</h3>
@@ -96,7 +104,7 @@
         </section>
 
         <!-- Секція Ціни -->
-        <section #price class="section-price">
+        <section class="section-price" id="price">
             <div class="container">
                 <h2 class="section-name">Проведи время в компании лучших мастеров</h2>
                 <h3 class="main-title">Услуги и цены</h3>
@@ -148,7 +156,7 @@
         </section>
 
         <!-- Секція Майстри -->
-        <section #masters class="section-masters">
+        <section class="section-masters" id="masters">
             <div class="container">
                 <h2 class="section-name">для настоящих ценителей атмосферы</h2>
                 <h3 class="main-title">Наши мастера</h3>
@@ -397,7 +405,7 @@
                 </form>
             </div>
 
-            <div class="container-contacts">
+            <div class="container-contacts" id="contacts">
                 <h3 class="main-title">Контакты</h3>
                 <ul class="contacts-list">
                     <li class="contacts">
