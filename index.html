@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BarberShop</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" 
-rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
@@ -20,12 +21,29 @@ rel="stylesheet">
 
     <!-- Шапка сторінки -->
     <header class="page-header">
-            <div class="container">
-                <a class="logo">
-                    <svg width="65" height="55">
-                        <use href="./image/icons/Logo.svg"></use>
+        <div class="container">
+            <a class="logo">
+                <svg width="65" height="55">
+                    <use href="./image/icons/Logo.svg"></use>
+                </svg>
+            </a>
+
+            <!-- Кнопки для мобільного меню -->
+            <button class="menu-toggle js-open-menu" type="button" id="menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-icon" width="24" height="16">
+                    <use href="./image/icons/sprite.svg#icon-menu-burger"></use>
+                </svg>
+            </button>
+
+
+            <div class="mobile-menu" id="menu">
+
+                <button class="menu-button-close" type="button">
+                    <svg class="menu-icon" width="19" height="19">
+                        <use href="./image/icons/sprite.svg#icon-menu-close"></use>
                     </svg>
-                </a>
+                </button>
+
                 <nav class="page-navigation">
                     <ul class="navigation-list">
                         <li class="navigation-item" id="about">О нас</li>
@@ -46,19 +64,9 @@ rel="stylesheet">
                             rel="noopener noreferrer" aria-label="Ссылка на Ютуб">Youtube</a>
                     </li>
                 </ul>
-
-                <!-- Кнопки для мобільного меню -->
-                <button class="menu-button" type="button">
-                    <svg width="40" height="40">
-                        <use href="./image/icons/"></use>
-                    </svg>
-                </button>
-                <button class="menu-button" type="button">
-                    <svg width="40" height="40">
-                        <use href="./image/icons/"></use>
-                    </svg>
-                </button>
             </div>
+
+        </div>
     </header>
 
     <main>
@@ -159,43 +167,43 @@ rel="stylesheet">
                             </picture>
                         </div>
 
-                            <h4 class="masters-title" lang="en">John Smith</h4>
-                            <p class="masters-position" lang="en">Extreme Barber</p>
+                        <h4 class="masters-title" lang="en">John Smith</h4>
+                        <p class="masters-position" lang="en">Extreme Barber</p>
 
-                            <ul class="soc-link-list">
-                                <li class="soc-link-item">
-                                    <a class="soc-link" href="https://www.instagram.com/" target="_blank"
-                                        rel="noopener noreferrer" aria-label="Иконка Инстаграма">
-                                        <svg width="20" height="20">
-                                            <use href="./image/icons/sprite.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="soc-link-item">
-                                    <a class="soc-link" href="https://twitter.com/" target="_blank"
-                                        rel="noopener noreferrer" aria-label="Иконка Твиттера">
-                                        <svg width="20" height="20">
-                                            <use href="./image/icons/sprite.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="soc-link-item">
-                                    <a class="soc-link" href="https://www.facebook.com/" target="_blank"
-                                        rel="noopener noreferrer" aria-label="Иконка Фейсбука">
-                                        <svg width="20" height="20">
-                                            <use href="./image/icons/sprite.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="soc-link-item">
-                                    <a class="soc-link" href="https://www.linkedin.com/" target="_blank"
-                                        rel="noopener noreferrer" aria-label="Иконка Линкедина">
-                                        <svg width="20" height="20">
-                                            <use href="./image/icons/sprite.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
+                        <ul class="soc-link-list">
+                            <li class="soc-link-item">
+                                <a class="soc-link" href="https://www.instagram.com/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Иконка Инстаграма">
+                                    <svg width="20" height="20">
+                                        <use href="./image/icons/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="soc-link-item">
+                                <a class="soc-link" href="https://twitter.com/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Иконка Твиттера">
+                                    <svg width="20" height="20">
+                                        <use href="./image/icons/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="soc-link-item">
+                                <a class="soc-link" href="https://www.facebook.com/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Иконка Фейсбука">
+                                    <svg width="20" height="20">
+                                        <use href="./image/icons/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="soc-link-item">
+                                <a class="soc-link" href="https://www.linkedin.com/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Иконка Линкедина">
+                                    <svg width="20" height="20">
+                                        <use href="./image/icons/sprite.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
 
                     <li class="masters-item">
@@ -370,70 +378,70 @@ rel="stylesheet">
 
     <!-- Футер -->
     <footer class="page-footer">
-            <div class="container">
-                <div class="container-form">
-                    <form class="form-recording" autocomplete="off">
-                        <b class="title-recording">Онлайн-запись</b>
-                        <label class="label-recording">
-                            Имя*
-                            <input type="text" class="input-recording" name="user-name" required autofocus>
-                        </label>
-                        <label class="label-recording">
-                            Телефон*
-                            <input type="tel" class="input-recording" name="user-phone" required>
-                        </label>
-                        <label for="messange"></label>
-                        <textarea class="input-recording" name="user-messange" id="messange" cols="3" rows="5"
-                            placeholder="Напишите нам Ваши пожелания"></textarea>
-                        <button class="form-button" type="submit">отправить</button>
-                    </form>
-                </div>
-
-                <div class="container-contacts">
-                    <h3 class="main-title">Контакты</h3>
-                    <ul class="contacts-list">
-                        <li class="contacts">
-                            <a class="link-contact"
-                                href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%92%D0%BE%D0%BB%D0%BE%D1%88%D0%BA%D0%BE%D0%B2%D0%B0,+7,+%D0%91%D1%83%D1%87%D0%B0,+%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB."
-                                target="_blank" rel="noopener noreferrer">
-                                <svg class="icon-contact" width="24" height="24">
-                                    <use href="./image/icons/sprite.svg#icon-location"></use>
-                                </svg>
-                                ул. Васильковая, 7А, Киев, 08132</a>
-                        </li>
-                        <li class="contacts">
-                            <a class="link-contact" href="tel:+380441111111">
-                                <svg class="icon-contact" width="24" height="24">
-                                    <use href="./image/icons/sprite.svg#icon-phone"></use>
-                                </svg>
-                                +38 044 111 11 11</a>
-                        </li>
-                        <li class="contacts">
-                            <a class="link-contact" href="mailto:barbershop@email.com">
-                                <svg class="icon-contact" width="24" height="24">
-                                    <use href="./image/icons/sprite.svg#icon-mail"></use>
-                                </svg>
-                                barbershop@email.com</a>
-                        </li>
-                    </ul>
-                    <h4>время работы</h4>
-                    <p>Ежедневно с 9:00 до 22:00</p>
-                </div>
-
-                <div>
-                    <ul class="footer-social-list">
-                        <li class="ftr-social-item">
-                            <a class="ftr-social-link" href="https://www.instagram.com/" target="_blank"
-                                rel="noopener noreferrer" aria-label="Ссылка на Инстаграм">Instagram</a>
-                        </li>
-                        <li class="ftr-social-item">
-                            <a class="ftr-social-link" href="https://www.youtube.com/" target="_blank"
-                                rel="noopener noreferrer" aria-label="Ссылка на Ютуб">Youtube</a>
-                        </li>
-                    </ul>
-                    <p>&#169; Copyright 2020</p>
-                </div>
+        <div class="container">
+            <div class="container-form">
+                <form class="form-recording" autocomplete="off">
+                    <b class="title-recording">Онлайн-запись</b>
+                    <label class="label-recording">
+                        Имя*
+                        <input type="text" class="input-recording" name="user-name" required autofocus>
+                    </label>
+                    <label class="label-recording">
+                        Телефон*
+                        <input type="tel" class="input-recording" name="user-phone" required>
+                    </label>
+                    <label for="messange"></label>
+                    <textarea class="input-recording" name="user-messange" id="messange" cols="3" rows="5"
+                        placeholder="Напишите нам Ваши пожелания"></textarea>
+                    <button class="form-button" type="submit">отправить</button>
+                </form>
             </div>
+
+            <div class="container-contacts">
+                <h3 class="main-title">Контакты</h3>
+                <ul class="contacts-list">
+                    <li class="contacts">
+                        <a class="link-contact"
+                            href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%92%D0%BE%D0%BB%D0%BE%D1%88%D0%BA%D0%BE%D0%B2%D0%B0,+7,+%D0%91%D1%83%D1%87%D0%B0,+%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB."
+                            target="_blank" rel="noopener noreferrer">
+                            <svg class="icon-contact" width="24" height="24">
+                                <use href="./image/icons/sprite.svg#icon-location"></use>
+                            </svg>
+                            ул. Васильковая, 7А, Киев, 08132</a>
+                    </li>
+                    <li class="contacts">
+                        <a class="link-contact" href="tel:+380441111111">
+                            <svg class="icon-contact" width="24" height="24">
+                                <use href="./image/icons/sprite.svg#icon-phone"></use>
+                            </svg>
+                            +38 044 111 11 11</a>
+                    </li>
+                    <li class="contacts">
+                        <a class="link-contact" href="mailto:barbershop@email.com">
+                            <svg class="icon-contact" width="24" height="24">
+                                <use href="./image/icons/sprite.svg#icon-mail"></use>
+                            </svg>
+                            barbershop@email.com</a>
+                    </li>
+                </ul>
+                <h4>время работы</h4>
+                <p>Ежедневно с 9:00 до 22:00</p>
+            </div>
+
+            <div>
+                <ul class="footer-social-list">
+                    <li class="ftr-social-item">
+                        <a class="ftr-social-link" href="https://www.instagram.com/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Ссылка на Инстаграм">Instagram</a>
+                    </li>
+                    <li class="ftr-social-item">
+                        <a class="ftr-social-link" href="https://www.youtube.com/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Ссылка на Ютуб">Youtube</a>
+                    </li>
+                </ul>
+                <p>&#169; Copyright 2020</p>
+            </div>
+        </div>
     </footer>
 
 </body>

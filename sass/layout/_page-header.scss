@@ -1,0 +1,22 @@
+.logo {
+    width: 69px;
+    height: 55px;
+}
+
+.menu-toggle {
+    & .menu-icon {
+        fill: $main-bcg-color;
+    }
+
+    &:hover .menu-icon,
+    &:focus .menu-icon {
+        fill: $accent-color;
+    }
+}
+
+
+.mobile-menu {
+    background-color: aqua;
+    width: 80%;
+    height: 400px;
+}

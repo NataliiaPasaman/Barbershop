@@ -150,6 +150,26 @@ img {
   margin-bottom: 20px;
 }
 
+.logo {
+  width: 69px;
+  height: 55px;
+}
+
+.menu-toggle .menu-icon {
+  fill: #fff;
+}
+
+.menu-toggle:hover .menu-icon,
+.menu-toggle:focus .menu-icon {
+  fill: #FF6C00;
+}
+
+.mobile-menu {
+  background-color: aqua;
+  width: 80%;
+  height: 400px;
+}
+
 .hero {
   background-repeat: no-repeat;
   background-position: center;
