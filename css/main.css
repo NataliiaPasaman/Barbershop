@@ -189,20 +189,91 @@ img {
 }
 
 .menu-container {
+  outline: 1px solid red;
   position: relative;
-  background-color: aqua;
+  background-color: #fff;
   width: 350px;
   height: 796px;
+  padding-top: 118px;
+  padding-left: 50px;
+  padding-bottom: 227px;
 }
 
 .page-navigation {
-  margin-top: 118px;
-  margin-left: 49px;
   margin-bottom: 64px;
 }
 
 .navigation-item:not(:last-child) {
   margin-bottom: 24px;
+}
+
+.navigation-link,
+.header-phone {
+  color: #303030;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.navigation-link:hover, .navigation-link:focus,
+.header-phone:hover,
+.header-phone:focus {
+  color: #FF6C00;
+}
+
+.header-phone {
+  text-transform: uppercase;
+}
+
+.header-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin-bottom: 64px;
+}
+
+.header-active .main-button {
+  margin-top: 24px;
+  width: 194px;
+}
+
+.page-social-link {
+  position: relative;
+  padding-left: 100px;
+  color: #303030;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+
+.page-social-link:hover, .page-social-link:focus {
+  color: #FF6C00;
+}
+
+.current::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background-color: #303030;
+  width: 60px;
+  height: 1px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .hero {

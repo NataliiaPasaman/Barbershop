@@ -32,16 +32,19 @@
 }
 
 .menu-container {
+    outline: 1px solid red;
+    
     position: relative;
-    background-color: aqua;
+    background-color: $main-bcg-color;
     width: 350px;
     // width: 72%;
     height: 796px;
+    padding-top: 118px;
+    padding-left: 50px;
+    padding-bottom: 227px;
 }
 
 .page-navigation {
-    margin-top: 118px;
-    margin-left: 49px;
     margin-bottom: 64px;
 }
 
@@ -50,3 +53,65 @@
         margin-bottom: 24px;
     }
 }
+
+.navigation-link,
+.header-phone {
+    color: $title-color;
+    font-weight: 600;
+    font-size: $main-font-size;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.header-phone {
+    text-transform: uppercase;
+}
+
+.header-active {
+    @include Flex (flex, flex-start, center);
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
+
+    & .main-button {
+        margin-top: 24px;
+        width: 194px;
+    }
+}
+
+.page-social-link {
+    position: relative;
+    padding-left: 100px;
+
+    color: $title-color;
+    font-weight: 600;
+
+    @include SectionH2 ($secondary-font-size, 1.36, 0.2em, null);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.current {   
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+        background-color: $title-color;
+        width: 60px;
+        height: 1px;
+        
+        transform: translateY(10px);
+    }
+}
+
