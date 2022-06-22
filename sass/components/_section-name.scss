@@ -23,11 +23,16 @@
 }
 
 .hero-slogan {
-    margin-top: 112px;
     color: rgba(157, 164, 189, 0.6);
 
     &::before {
         content: "";
         background-color: rgba(157, 164, 189, 0.6);
+    }
+}
+
+.hero {
+    & .hero-slogan {
+        margin-top: 112px;
     }
 }
