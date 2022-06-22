@@ -22,14 +22,14 @@
     <!-- Шапка сторінки -->
     <header class="page-header">
         <div class="container">
-            <a class="logo">
+            <a class="logo" href="./">
                 <svg width="65" height="55">
-                    <use href="./image/icons/Logo.svg"></use>
+                    <use href="./image/icons/sprite.svg#icon-logo"></use>
                 </svg>
             </a>
 
             <!-- Кнопки для мобільного меню -->
-            <button class="menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <button class="menu-toggle js-open-menu menu-burger" type="button" aria-expanded="false" aria-controls="mobile-menu">
                 <svg class="menu-icon" width="24" height="16">
                     <use href="./image/icons/sprite.svg#icon-menu-burger"></use>
                 </svg>
@@ -38,7 +38,7 @@
 
             <div class="menu-container js-menu-container" id="mobile-menu">
 
-                <button class="menu-toggle js-close-menu" type="button">
+                <button class="menu-toggle js-close-menu menu-close" type="button">
                     <svg class="menu-icon" width="19" height="19">
                         <use href="./image/icons/sprite.svg#icon-menu-close"></use>
                     </svg>
@@ -455,6 +455,14 @@
             </div>
         </div>
     </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 
 </body>
 

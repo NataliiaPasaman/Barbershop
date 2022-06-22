@@ -1,11 +1,22 @@
+.page-header {
+    position: relative;
+    top: 40px;
+    left: 0;
+    height: 0;
+}
+
 .logo {
     width: 69px;
     height: 55px;
+
+    & svg {
+        fill: $main-bcg-color;
+    }
 }
 
 .menu-toggle {
     position: absolute;
-    top: 48px;
+    top: 8px;
     right: 31px;
 
     @include Flex (flex, center, center);
@@ -25,23 +36,46 @@
         fill: $title-color;
     }
 
-    &:hover .menu-icon,
-    &:focus .menu-icon {
-        fill: $accent-color;
+    @media screen and (min-width: 768px) {
+        display: none;
     }
 }
 
+.menu-burger {
+    background-color: transparent;
+
+    & .menu-icon {
+        fill: $main-bcg-color;
+    }
+}
+
+.menu-close {
+    top: 40px;
+}
+
 .menu-container {
-    outline: 1px solid red;
-    
-    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+
     background-color: $main-bcg-color;
-    width: 350px;
-    // width: 72%;
-    height: 796px;
+    width: 75vw;
+    height: 100%;
     padding-top: 118px;
     padding-left: 50px;
     padding-bottom: 227px;
+
+    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), 
+    -2px 0px 4px rgba(0, 0, 0, 0.08), 
+    -1px 0px 3px rgba(0, 0, 0, 0.16);
+    transform: translateX(100%);
+
+    transition: transform 500ms ease-in-out;
+
+    &.is-open {
+        transform: translateX(0);
+    }
 }
 
 .page-navigation {
@@ -84,6 +118,12 @@
     }
 }
 
+.page-social-item {
+    &:first-child {
+        margin-bottom: 24px;
+    }
+}
+
 .page-social-link {
     position: relative;
     padding-left: 100px;
@@ -99,7 +139,7 @@
     }
 }
 
-.current {   
+.current {
     &::before {
         content: "";
         position: absolute;
