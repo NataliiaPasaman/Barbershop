@@ -1,0 +1,57 @@
+.benefits-text {
+    margin-bottom: 44px;
+
+    font-size: $main-font-size;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+}
+
+.benefits-list {
+    @include Flex (flex, center, center);
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.benefits-item {
+    &:nth-child(2n + 1) {
+        margin-right: 30px;
+    }
+
+}
+
+.benefits-box {
+    @include Flex (flex, center, center);
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    width: 193px;
+    height: 133px;
+    background-color: $secondary-bcg-color;
+}
+
+.number {
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: $title-font-size;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: $title-color;
+}
+
+.plus {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.38;
+    text-align: center;
+    color: $accent-color;
+}
+
+.benefits-pride {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+    color: $title-color;
+}

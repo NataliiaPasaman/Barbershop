@@ -8,6 +8,10 @@
     (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../image/bcg-price/bcg-price-mob@2x.png');
     }
+
+    & .main-button {
+        margin: 0 auto;
+    }
 }
 
 .price-box {
@@ -47,6 +51,3 @@
     }
 }
 
-.main-button {
-    margin: 0 150px;
-}
