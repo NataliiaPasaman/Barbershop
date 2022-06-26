@@ -2,6 +2,36 @@
     background-color: $secondary-bcg-color;
 }
 
+.masters-item {
+    &:not(:last-child) {
+        margin-bottom: 64px;
+    }
+
+    & .card-thumb {
+        margin-bottom: 30px;
+    }
+}
+
+.masters-title {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: $main-font-size;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $title-color;
+}
+
+.masters-position {
+    margin-bottom: 30px;
+    font-size: $secondary-font-size;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+}
+
+
 .soc-link-list {
     @include Flex (flex, center, center);
 }
@@ -10,12 +40,10 @@
     &:not(:last-child) {
         margin-right: 10px;
     }
-
-    // width: 44px;
-    // height: 44px;
 }
 
 .soc-link {
+    @include Flex (flex, center, center);
     width: 44px;
     height: 44px;
     border-radius: 50%;

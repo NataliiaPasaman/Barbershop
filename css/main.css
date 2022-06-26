@@ -529,6 +529,33 @@ img {
   background-color: #F7F7F7;
 }
 
+.masters-item:not(:last-child) {
+  margin-bottom: 64px;
+}
+
+.masters-item .card-thumb {
+  margin-bottom: 30px;
+}
+
+.masters-title {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.masters-position {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FF6C00;
+}
+
 .soc-link-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -546,6 +573,15 @@ img {
 }
 
 .soc-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
