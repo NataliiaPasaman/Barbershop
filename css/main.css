@@ -596,4 +596,12 @@ img {
 .soc-link:focus svg {
   fill: #FF6C00;
 }
+
+.section-portfolio .section-name {
+  margin-bottom: 44px;
+}
+
+.portfolio-item:not(:last-child) {
+  margin-bottom: 30px;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,11 @@
+.section-portfolio {
+    & .section-name {
+        margin-bottom: 44px;
+    }
+}
+
+.portfolio-item {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
