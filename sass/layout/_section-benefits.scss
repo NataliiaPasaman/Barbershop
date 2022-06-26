@@ -8,7 +8,7 @@
 }
 
 .benefits-list {
-    @include Flex (flex, center, center);
+    @include Flex (flex, flex-start, center);
     flex-wrap: wrap;
     flex-basis: calc((100% - 30px) / 2);
 }
@@ -18,6 +18,17 @@
         margin-right: 30px;
     }
 
+    &:nth-child(-n + 2) {
+        margin-bottom: 30px;
+    }
+
+    &:nth-child(2) {
+        margin-top: 36px;
+    }    
+
+    &:nth-child(3) {
+        margin-top: -36px;
+    }    
 }
 
 .benefits-box {
