@@ -705,8 +705,20 @@ img {
 }
 
 .container-contacts {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../image/bcg-contacts/bcg-contact-mob.png");
+  background-image: -webkit-image-set(url("../image/bcg-contacts/bcg-contact-mob.webp") 1x);
   padding-top: 84px;
   padding-bottom: 84px;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .container-contacts {
+    background-image: url("../image/bcg-contacts/bcg-contact-mob@2x.png");
+    background-image: -webkit-image-set(url("../image/bcg-contacts/bcg-contact-mob@2x.webp") 2x);
+  }
 }
 
 .container-contacts .main-title {
