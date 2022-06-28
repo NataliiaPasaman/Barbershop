@@ -1,6 +1,7 @@
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    margin: 0 auto;
     padding-left: 31px;
     padding-right: 31px;
   }
@@ -160,6 +161,10 @@ img {
   top: 40px;
   left: 0;
   height: 0;
+}
+
+.page-header .container {
+  margin: 0;
 }
 
 .logo {
@@ -329,11 +334,15 @@ img {
   background-color: #F7F7F7;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 480px 580px;
+  background-size: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url("../image/bcg-hero/bcg-hero-mob.jpg");
   background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../image/bcg-hero/bcg-hero-mob.jpg");
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), -webkit-image-set(url("../image/bcg-hero/bcg-hero-mob.webp") 1x);
   background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), -webkit-image-set(url("../image/bcg-hero/bcg-hero-mob.webp") 1x);
+}
+
+.hero .container {
+  margin: 0;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -603,5 +612,95 @@ img {
 
 .portfolio-item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.page-footer {
+  background-color: #191C26;
+}
+
+.page-footer .container {
+  background-color: #191C26;
+}
+
+.container-form {
+  width: 100%;
+  padding: 84px 0;
+}
+
+.form-recording {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-recording .main-button {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 160px;
+}
+
+.title-recording {
+  font-family: 'Raleway';
+  font-size: 42px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+.label-recording:placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-color: transparent;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.input-recording {
+  margin-top: 40px;
+  padding-bottom: 8px;
+  display: block;
+  width: 100%;
+  height: 25px;
+  color: #FF6C00;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.input-recording:hover, .input-recording:focus {
+  border-bottom: 1px solid #fff;
+}
+
+.input-recording:hover:placeholder, .input-recording:focus:placeholder {
+  border-bottom: 1px solid #fff;
+}
+
+.label-messange {
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.input-messange {
+  margin-top: 0;
+  height: 80px;
 }
 /*# sourceMappingURL=main.css.map */

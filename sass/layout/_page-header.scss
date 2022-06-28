@@ -1,4 +1,9 @@
 .page-header {
+
+    & .container {
+        margin: 0;
+    }
+    
     position: relative;
     top: 40px;
     left: 0;

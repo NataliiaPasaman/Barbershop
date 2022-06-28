@@ -1,6 +1,7 @@
 .container {
     @media screen and (min-width: $mobile) {
         width: $mobile;
+        margin: 0 auto;
         padding-left: 31px;
         padding-right: 31px;
     }

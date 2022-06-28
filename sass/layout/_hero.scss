@@ -1,9 +1,14 @@
 .hero {
+
+    & .container {
+        margin: 0;
+    }
+
     height: 580px;
     background-color: $secondary-bcg-color;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 480px 580px;
+    background-size: 100%;
 
     // Фонове зображення для мобільної версії
     background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), 

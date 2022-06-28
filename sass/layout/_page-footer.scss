@@ -1,0 +1,85 @@
+.page-footer {
+    background-color: #191C26;
+    
+    & .container {
+        background-color: #191C26;
+    }
+}
+
+.container-form {
+    width: 100%;
+    padding: 84px 0;
+}
+
+.form-recording {
+    @include Flex (flex, stretch, center);
+    flex-direction: column;
+
+    & .main-button {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 160px;
+    }
+}
+
+.title-recording {
+    font-family: 'Raleway';
+    font-size: $title-font-size;
+    line-height: $title-lh;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $main-bcg-color;
+}
+
+.label-recording {
+    &:placeholder {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        border-color: transparent;
+
+        color: rgba(157, 164, 189, 0.4);
+    }
+}
+
+.input-recording {
+    margin-top: 40px;
+    padding-bottom: 8px;
+    display: block;
+    width: 100%;
+    height: 25px;
+
+    color: $accent-color;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+    &:hover,
+    &:focus  {
+        border-bottom: 1px solid $main-bcg-color;
+    }
+
+    &:hover:placeholder,
+    &:focus:placeholder   {
+        border-bottom: 1px solid $main-bcg-color;
+    }
+}
+
+.label-messange {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: rgba(157, 164, 189, 0.4);
+}
+
+.input-messange {
+    margin-top: 0;
+    height: 80px;
+}
