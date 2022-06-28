@@ -624,7 +624,8 @@ img {
 
 .container-form {
   width: 100%;
-  padding: 84px 0;
+  padding-top: 84px;
+  padding-bottom: 84px;
 }
 
 .form-recording {
@@ -653,7 +654,6 @@ img {
 .title-recording {
   font-family: 'Raleway';
   font-size: 42px;
-  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.05em;
   color: #fff;
@@ -702,5 +702,50 @@ img {
 .input-messange {
   margin-top: 0;
   height: 80px;
+}
+
+.container-contacts {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.container-contacts .main-title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container-contacts .section-name {
+  color: #fff;
+}
+
+.contacts-list {
+  margin-bottom: 44px;
+}
+
+.contacts:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.link-contact,
+.time-work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9DA4BD;
+}
+
+.link-contact .icon-contact,
+.time-work .icon-contact {
+  fill: currentColor;
+  margin-right: 20px;
 }
 /*# sourceMappingURL=main.css.map */
