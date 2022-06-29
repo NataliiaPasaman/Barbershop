@@ -1,0 +1,53 @@
+// Контакти
+
+.section-contacts {
+    background-color: #191C26;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: url('../image/bcg-contacts/bcg-contact-mob.png');
+    background-image: -webkit-image-set(url('../image/bcg-contacts/bcg-contact-mob.webp') 1x);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../image/bcg-contacts/bcg-contact-mob@2x.png');
+        background-image: -webkit-image-set(url('../image/bcg-contacts/bcg-contact-mob@2x.webp') 2x);
+    }
+
+    & .main-title {
+        color: $main-bcg-color;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    & .section-name {
+        color: $main-bcg-color;
+        &::before {
+            background-color: $main-bcg-color;
+        }
+    }
+}
+
+.contacts-list {
+    margin-bottom: 44px;
+}
+
+.contacts {
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.link-contact,
+.time-work {
+    @include Flex (flex, center, flex-start);
+
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: $subtitle-color;
+
+    & .icon-contact {
+        fill: currentColor;
+        margin-right: 20px;
+    }
+}

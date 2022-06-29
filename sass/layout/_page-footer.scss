@@ -1,138 +1,50 @@
-// Форма
-
 .page-footer {
-    background-color: #191C26;
+    background-color: $secondary-bcg-color;
+    padding-top: 44px;
+    padding-bottom: 44px;
+}
 
-    & .container {
-        background-color: #191C26;
+.footer-social-list {
+    @include Flex (flex, center, flex-end);
+
+    & .ftr-social-item {
+        &:first-child {
+            margin-right: 40px;
+        }
     }
 }
 
-.container-form {
-    width: 100%;
-    @include PaddingSection (84px, 84px);
-}
+.ftr-social-link {
+    position: relative;
+    color: $title-color;
+    font-weight: 600;
 
-.form-recording {
-    @include Flex (flex, stretch, center);
-    flex-direction: column;
-
-    & .main-button {
-        margin-top: 40px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 160px;
-    }
-}
-
-.title-recording {
-    font-family: 'Raleway';
-    font-size: $title-font-size;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: $main-bcg-color;
-}
-
-.label-recording {
-    &:placeholder {
-        font-weight: 600;
-        font-size: 11px;
-        line-height: 1.36;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        border-color: transparent;
-
-        color: rgba(157, 164, 189, 0.4);
-    }
-}
-
-.input-recording {
-    margin-top: 40px;
-    padding-bottom: 8px;
-    display: block;
-    width: 100%;
-    height: 25px;
-
-    color: $accent-color;
-    background-color: transparent;
-    border-color: transparent;
-    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    @include SectionH2 (11px, 1.36, 0.2em, null);
 
     &:hover,
-    &:focus  {
-        border-bottom: 1px solid $main-bcg-color;
-    }
-
-    &:hover:placeholder,
-    &:focus:placeholder   {
-        border-bottom: 1px solid $main-bcg-color;
+    &:focus {
+        color: $accent-color;
     }
 }
 
-.label-messange {
-    margin-top: 40px;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+.secondary-current {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100px;
 
-    color: rgba(157, 164, 189, 0.4);
-}
-
-.input-messange {
-    margin-top: 0;
-    height: 80px;
-}
-
-// Контакти
-
-.container-contacts {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: url('../image/bcg-contacts/bcg-contact-mob.png');
-    background-image: -webkit-image-set(url('../image/bcg-contacts/bcg-contact-mob.webp') 1x);
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url('../image/bcg-contacts/bcg-contact-mob@2x.png');
-        background-image: -webkit-image-set(url('../image/bcg-contacts/bcg-contact-mob@2x.webp') 2x);
-    }
-
-    @include PaddingSection (84px, 84px);
-
-    & .main-title {
-        color: $main-bcg-color;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    & .section-name {
-        color: $main-bcg-color;
+        display: block;
+        background-color: $title-color;
+        width: 60px;
+        height: 1px;
+        
+        transform: translateY(9px);
     }
 }
 
-.contacts-list {
-    margin-bottom: 44px;
-}
-
-.contacts {
-    &:not(:last-child) {
-        margin-bottom: 20px;
-    }
-}
-
-.link-contact,
-.time-work {
-    @include Flex (flex, center, flex-start);
-
-    line-height: 1.67;
-    letter-spacing: 0.02em;
+.footer-copyright {
+    padding-top: 35px;
+    @include SectionH2 (11px, 1.36, 0.02em, null);
     color: $subtitle-color;
-
-    & .icon-contact {
-        fill: currentColor;
-        margin-right: 20px;
-    }
 }

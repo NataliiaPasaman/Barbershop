@@ -614,18 +614,8 @@ img {
   margin-bottom: 30px;
 }
 
-.page-footer {
+.section-form {
   background-color: #191C26;
-}
-
-.page-footer .container {
-  background-color: #191C26;
-}
-
-.container-form {
-  width: 100%;
-  padding-top: 84px;
-  padding-bottom: 84px;
 }
 
 .form-recording {
@@ -704,31 +694,34 @@ img {
   height: 80px;
 }
 
-.container-contacts {
+.section-contacts {
+  background-color: #191C26;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 100%;
   background-image: url("../image/bcg-contacts/bcg-contact-mob.png");
   background-image: -webkit-image-set(url("../image/bcg-contacts/bcg-contact-mob.webp") 1x);
-  padding-top: 84px;
-  padding-bottom: 84px;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .container-contacts {
+  .section-contacts {
     background-image: url("../image/bcg-contacts/bcg-contact-mob@2x.png");
     background-image: -webkit-image-set(url("../image/bcg-contacts/bcg-contact-mob@2x.webp") 2x);
   }
 }
 
-.container-contacts .main-title {
+.section-contacts .main-title {
   color: #fff;
   text-align: center;
   margin-bottom: 40px;
 }
 
-.container-contacts .section-name {
+.section-contacts .section-name {
   color: #fff;
+}
+
+.section-contacts .section-name::before {
+  background-color: #fff;
 }
 
 .contacts-list {
@@ -759,5 +752,61 @@ img {
 .time-work .icon-contact {
   fill: currentColor;
   margin-right: 20px;
+}
+
+.page-footer {
+  background-color: #F7F7F7;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.footer-social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer-social-list .ftr-social-item:first-child {
+  margin-right: 40px;
+}
+
+.ftr-social-link {
+  position: relative;
+  color: #303030;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+
+.ftr-social-link:hover, .ftr-social-link:focus {
+  color: #FF6C00;
+}
+
+.secondary-current::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100px;
+  display: block;
+  background-color: #303030;
+  width: 60px;
+  height: 1px;
+  -webkit-transform: translateY(9px);
+          transform: translateY(9px);
+}
+
+.footer-copyright {
+  padding-top: 35px;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: #9DA4BD;
 }
 /*# sourceMappingURL=main.css.map */
