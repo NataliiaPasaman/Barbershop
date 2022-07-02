@@ -10,6 +10,10 @@ section {
     @media screen and (min-width: $mobile) {
         @include PaddingSection (84px, 84px);
     }
+
+    @media screen and (min-width: $tablet) {
+        @include PaddingSection (100px, 100px)
+    }
 }
 
 img {
