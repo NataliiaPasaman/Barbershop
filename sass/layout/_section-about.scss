@@ -1,3 +1,29 @@
+@include BarberScreen(tablet) {
+    .about-flex {
+        @include Flex (flex, center, space-between);
+        flex-basis: calc((100% - 30px) / 2);
+    }
+}
+
+.about-img {
+    display: none;
+
+    @include BarberScreen(tablet) {
+        display: block;
+        width: 330px;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@include BarberScreen(tablet) {
+    .card-about-text {
+        margin-left: 30px;
+    }
+}
+
 .about-title {
     margin-bottom: 20px;
     width: 330px;
