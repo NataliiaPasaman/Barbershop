@@ -123,8 +123,42 @@ while (clientCounter < maxClients) {
 // Цикл do...while
 let password = "";
 
-do {
-  password = prompt("Введіть пароль довший 4-х символів", "");
-} while (password.length < 5);
+// do {
+//   password = prompt("Введіть пароль довший 4-х символів", "");
+// } while (password.length < 5);
 
-console.log("Ввели пароль: ", password);
+// console.log("Ввели пароль: ", password);
+
+
+
+
+// Цикл  for
+const target = 3;
+let sum = 0;
+
+for (let i = 0; i <= target; i += 1) {
+  sum += i;
+}
+
+console.log(sum);
+
+
+
+// Згадаємо про операцію a % b і виведемо остачу від ділення за допомогою циклу.
+const max = 10;
+for (let i = 0; i < max; i += 1) {
+  console.log(`${max} % ${i} = `, max % i);
+}
+
+
+
+for (let i = 0; i <= 5; i += 1) {
+    console.log(i);
+  
+    if (i === 3) {
+      console.log("Знайшли число 3, перериваємо виконання циклу");
+      break;
+    }
+  }
+  
+  console.log("Лог після циклу");
