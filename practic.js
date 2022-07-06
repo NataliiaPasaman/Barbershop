@@ -100,3 +100,31 @@ if (payment < balanceBuyer) {
 }
 
 console.log(`Операція завершена`);
+
+
+// Створимо лічильник.
+let counter = 0;
+
+while (counter < 10) {
+  console.log("counter: ", counter);
+  counter += 1;
+}
+
+let clientCounter = 20;
+const maxClients = 25;
+
+while (clientCounter < maxClients) {
+  console.log(clientCounter);
+  clientCounter += 1;
+}
+
+
+
+// Цикл do...while
+let password = "";
+
+do {
+  password = prompt("Введіть пароль довший 4-х символів", "");
+} while (password.length < 5);
+
+console.log("Ввели пароль: ", password);
