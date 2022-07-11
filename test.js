@@ -31,3 +31,4 @@ console.log(isRead);
 
 const isQuantity = prompt('Please, input number of product');
 console.log(isQuantity);
+
